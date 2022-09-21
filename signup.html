@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
   <title>Signup</title>
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -21,8 +22,10 @@
         <h1>Add a receive money transaction to record cash you've received from a customer or want to deposit.</h1>
       </div>
     </div>
-    <div class="g-center s-form">
+    <div class="g-center s-form none">
       <div>
+
+        <!-- sign in from  -->
         <form class="shadow">
           <h2>Sign Up</h2>
           <div>
@@ -46,11 +49,31 @@
             <input type="password" name="" id="CPass">
           </div>
           <input type="submit" value="Submit" class="shadow-sm">
-          <section>I have an account! <a href="login.html">Login</a></section>
+          <section>I have an account! <a href="#" class="toggleform">Login</a></section>
+        </form>
+      </div>
+    </div>
+    <div class="g-center l-form">
+      <div>
+
+        <!-- log in from  -->
+        <form class="shadow">
+          <h2>Log In</h2>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="" id="email">
+          </div>
+          <div>
+            <label for="pass">Password</label>
+            <input type="password" name="" id="pass">
+          </div>
+          <input type="submit" value="Log in" class="shadow-sm">
+          <section>Regest! <a href="#" class="toggleform">Sign in</a></section>
         </form>
       </div>
     </div>
   </main>
+  <script src="scripts/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossOrigin="anonymous"></script>

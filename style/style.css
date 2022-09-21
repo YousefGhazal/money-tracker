@@ -6,6 +6,10 @@ img {
   filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.4));
 }
 
+.none {
+  display: none !important;
+}
+
 main {
   background-color: #e8f9fd;
   display: grid;
@@ -41,14 +45,14 @@ main .hello h1 {
   text-shadow: -2px -2px #0aa1dd, 3px 2px 5px rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
-main .s-form {
+main .s-form, main .l-form {
   background-color: rgba(10, 161, 221, 0.5);
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
   background-image: url("../images/dollar.svg");
   background-size: 80px;
   position: relative;
 }
-main .s-form::before {
+main .s-form::before, main .l-form::before {
   content: "";
   position: absolute;
   top: 0;
@@ -59,10 +63,10 @@ main .s-form::before {
           backdrop-filter: blur(15px);
   z-index: 5;
 }
-main .s-form > div {
+main .s-form > div, main .l-form > div {
   z-index: 6;
 }
-main .s-form > div form {
+main .s-form > div form, main .l-form > div form {
   width: 100%;
   background-color: #e8f9fd;
   padding: 20px;
@@ -74,28 +78,28 @@ main .s-form > div form {
   flex-direction: column;
   gap: 10px;
 }
-main .s-form > div form div {
+main .s-form > div form div, main .l-form > div form div {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-main .s-form > div form label {
+main .s-form > div form label, main .l-form > div form label {
   font-size: 18px;
 }
-main .s-form > div form input {
+main .s-form > div form input, main .l-form > div form input {
   width: 100%;
-  border: 1px solid rgba(204, 204, 204, 0.2);
+  border: 1px solid #2155cd;
   border-radius: 10px;
   padding: 10px;
   outline: #79dae8;
 }
-main .s-form > div form input[type=submit] {
+main .s-form > div form input[type=submit], main .l-form > div form input[type=submit] {
   width: 100%;
   color: #e8f9fd;
   background-color: #2155cd;
   transition: 0.3s;
 }
-main .s-form > div form input[type=submit]:hover {
+main .s-form > div form input[type=submit]:hover, main .l-form > div form input[type=submit]:hover {
   opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
