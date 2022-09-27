@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>profile</title>
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossOrigin="anonymous" />
 </head>
+
 <body>
-    <div>img</div>
-    <div>username</div>
-    <div>firstname</div>
-    <div>lastname</div>
-    <div>email</div>
-    <a href="changpassword.html">changepassword</a>
-    <div>logout</div>
-    <div></div>
+	<div class="container pt-5 profile">
+		<div class="row user-info">
+			<div class="col-sm-3">
+				<div class="img-container">
+					<img src="images/avatar.svg" class="w-100" alt="avatar">
+					<div class="edit">
+						<label for="editPic"><i class="fad fa-edit"></i> Edit pictior</label>
+						<input type="file" name="" accept="image/*" id="editPic" class="d-none">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-6">
+						<div class="mb-3">
+							<label for="firstname" class="form-label">Firstname</label>
+							<input type="text" value="mahmoud" class="form-control" id="firstname">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="mb-3">
+							<label for="lastname" class="form-label">Lastname</label>
+							<input type="text" class="form-control" id="lastname" value="abu-attia">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="mb-3">
+							<label for="username" class="form-label">Username</label>
+							<input type="text" class="form-control" id="username" value="mahmoud-abu-attiya">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="mb-3">
+							<label for="email" class="form-label">Email address</label>
+							<input type="email" class="form-control" id="email" value="name@example.com">
+						</div>
+					</div>
+				</div>
+				<div class="user-transuctions shadow-sm">
+					<h3>Your transuctions</h3>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="must-get">
+								<h5>You must get <i class="fad fa-arrow-alt-right"></i> 120 EGP</h5>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="must-pay">
+								<h5>You must pay <i class="fad fa-arrow-alt-right"></i> 120 EGP</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossOrigin="anonymous"></script>
 </body>
+
 </html>

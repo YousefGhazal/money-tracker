@@ -6,48 +6,60 @@ $color--four: #e8f9fd;
 img {
   max-width: 100%;
 }
+
 .svg-shadow {
   filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.4));
 }
-.none{
+
+.none {
   display: none !important;
 }
+
 main {
   background-color: $color--four;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   width: 100%;
+
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
   }
+
   .g-center {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    > div {
+
+    >div {
       width: 50%;
+
       @media (max-width:767px) {
         width: 90%;
       }
     }
   }
+
   .hello {
     text-align: center;
+
     h1 {
       text-transform: capitalize;
       text-shadow: -2px -2px $color--two, 3px 2px 5px rgb(0 0 0 / 30%);
       font-weight: bold;
     }
   }
-  .s-form , .l-form {
+
+  .s-form,
+  .l-form {
     background-color: rgba(10, 161, 221, 0.5);
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
     background-image: url("../images/dollar.svg");
     background-size: 80px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -58,8 +70,10 @@ main {
       backdrop-filter: blur(15px);
       z-index: 5;
     }
-    > div{
+
+    >div {
       z-index: 6;
+
       form {
         width: 100%;
         background-color: $color--four;
@@ -71,32 +85,92 @@ main {
         display: flex;
         flex-direction: column;
         gap: 10px;
+
         div {
           width: 100%;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
         }
-        label{
+
+        label {
           font-size: 18px;
         }
-        input{
+
+        input {
           width: 100%;
           border: 1px solid $color--one;
           border-radius: 10px;
           padding: 10px;
-          outline:#79dae8;
+          outline: #79dae8;
         }
-        input[type="submit"]{
+
+        input[type="submit"] {
           width: 100%;
           color: $color--four;
           background-color: $color--one;
           transition: 0.3s;
-          &:hover{
+
+          &:hover {
             opacity: 0.8;
           }
         }
       }
+    }
+  }
+}
+
+.profile {
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .edit {
+      width: 100%;
+      max-width: 200px;
+      margin: auto;
+      background-color: $color--one;
+      border: 2px solid $color--three;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px;
+      color: $color--four;
+
+      label {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .user-info {
+    input {
+      background-color: $color--four;
+      box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+      border: 2px solid $color--two;
+    }
+  }
+
+  .user-transuctions {
+    background-color: $color--four;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid $color--two;
+
+    .must-get {
+      background-color: rgba(0, 128, 0, 0.3);
+      color: green;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .must-pay {
+      background-color: rgba(128, 0, 0, 0.3);
+      color: red;
+      padding: 10px;
+      border-radius: 10px;
     }
   }
 }
