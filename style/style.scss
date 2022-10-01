@@ -7,8 +7,17 @@ img {
   max-width: 100%;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 .svg-shadow {
-  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0px 3px 5transuctions
+  textpx rgba(0, 0, 0, 0.4));
+}
+
+.bord{
+  border: 1px solid rgba(232, 249, 253, 0.3);
 }
 
 .none {
@@ -215,7 +224,7 @@ aside {
 
   .sec {
     color: $color--four;
-    border: 1px solid $color--four;
+    border: 1px solid rgba(232, 249, 253, 0.3);
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     transition: 0.3s;
