@@ -228,4 +228,9 @@ aside .sec:hover {
   height: 100vh;
   z-index: 5;
   display: none;
+}
+
+.add-trans {
+  width: 90%;
+  max-width: 500px;
 }/*# sourceMappingURL=style.css.map */
